@@ -27,8 +27,13 @@ body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial,Helvetica,sans-serif;ba
 .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent2),var(--accent1));color:#012;text-decoration:none;font-weight:700;margin-right:8px}
 .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#dcefff}
 .hero-right{width:300px}
-.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 6px 20px rgba(2,6,23,0.6)}
-.card h3{margin:0 0 8px}
+.card{
+	background-color: rgba(6,12,20,0.62); /* solid-ish card background to avoid page-bg banding */
+	padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,0.04);
+	box-shadow:0 10px 30px rgba(2,6,23,0.6);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+}
+.card h3{margin:0 0 8px;color:#e6f7ff}
+.card h4{margin:0 0 6px;color:#e6f7ff;font-weight:700}
 
 .section{margin:22px 0;padding:18px}
 .section h3{margin:0 0 12px}
